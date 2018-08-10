@@ -1,0 +1,5 @@
+__pycache__
+client/*.jpg
+service/sample_jpgs/*.jpg
+.idea
+.vscode
