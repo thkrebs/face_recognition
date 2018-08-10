@@ -47,7 +47,7 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 && make install \
 && rm /${OPENCV_VERSION}.zip \
 && rm -r /opencv-${OPENCV_VERSION}
-COPY service/* /app
+COPY service/* /app/
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 5000
