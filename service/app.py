@@ -14,6 +14,15 @@ import re
 
 app = Flask(__name__)
 
+# test 
+@app.route("/test",methods=["GET"])
+def test():
+    response = {'message': 'test success'}
+    # encode response using jsonpickle
+    response_enc = jsonpickle.encode(response)
+    return Response(response=response_enc,status=200)
+
+
 # register a new user
 @app.route("/user/<username>",methods=['POST'])
 def newUser(username):
