@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: fr
+    app: fr-app
+  name: fr
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: fr
+  template:
+    metadata:
+      labels:
+        run: fr
+    spec:
+      containers:
+      - image: thkrebs/face_recognition:latest
+        name: fr
+        ports:
+        - containerPort: 5000

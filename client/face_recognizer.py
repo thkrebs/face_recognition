@@ -82,7 +82,10 @@ def send_image(image, url):
          # send http request with image and receive response
         r = request.Request(url, data=data, headers=headers, method='POST')
         resp = request.urlopen(r, timeout=10)
-        result = json.loads(resp.read().decode('utf-8'))
+        
+        data = resp.read().decode('utf-8') 
+        print(data)
+        result = json.loads(data)
     except urllib.error.URLError as err:
         print("Error accessing URL " + url )
         raise err
@@ -133,7 +136,6 @@ else:
         exit()
     username = args["user"]
     url = url + "/user/" + username.replace(" ","_")
-
 
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor and the face aligner
