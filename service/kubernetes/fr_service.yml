@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: fr-svc
+spec:
+  selector:
+    run: fr
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 5000
+    nodePort: 32000
+    targetPort: 5000
