@@ -108,7 +108,7 @@ $ curl http://<external-ip of your service:5000/test
 ## Run client program
 
 In order to run the client you need to install python 3 and the following core packages  
-- OpenCV
+- OpenCV (-> pip install opencv-python)
 - Dlib, e.g. follow the instructions [here](https://www.learnopencv.com/install-opencv-3-and-dlib-on-windows-python-only/)
 
 
