@@ -113,8 +113,10 @@ In order to run the client you need to install python 3 and the following core p
 
 
 Further you need to install the python packages imported in the client program `face_recognizer.py`
+If you are behind a proxy you need to define the environment variable HTTP_PROXY before running the client.
 
 The programm accesses the integrated webcam through OpenCV. I didn't test it with an external webcam, like a USB cam.
+
 
 The client application supports basically two functions:
 - add a face
