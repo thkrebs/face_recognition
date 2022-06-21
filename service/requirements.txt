@@ -1,5 +1,5 @@
 Flask==1.0.2 
-numpy===1.14.5
+numpy===1.22.0
 tensorflow==1.8.0
 jsonpickle==0.9.6    
 protobuf==3.5.2 
