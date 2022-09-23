@@ -2,7 +2,7 @@ Flask==1.0.2
 numpy===1.14.5
 tensorflow==1.8.0
 jsonpickle==0.9.6    
-protobuf==3.5.2 
+protobuf==3.18.3 
 urllib3==1.23
 h5py==2.8.0   
 Keras==2.2.0 
